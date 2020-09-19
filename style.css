@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
+
+/*notice the z-index are given in decreasing order where the preloading page has highest priority*/
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image:radial-gradient(#06c2ec, #0c0c0c);
+    background-position: center;
+    background-repeat: no-repeat;
+    height:100vh;
+    background-size: cover;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    overflow: hidden;  
+}
+/*preloading page design begin within music */
+.music{
+width:23.4375rem;
+height:38.3rem;
+background:linear-gradient(#020202,#06266b);
+position:relative;
+overflow:hidden;
+z-index:3;
+display:none;
+}
+
+#logo{
+    position:absolute;
+    top:25%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    animation:fill 0.5s ease forwards 3.5s;
+    pointer-events:none;
+}
+
+
+.logo1{
+    position:absolute;
+    top:47%;
+    left:53%;
+    transform:translate(-50%,-50%);
+    animation:flyin 4s ease-in-out ;
+    pointer-events:none;
+}
+
+.loading{
+    position:absolute;
+    top:70%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    height:3rem;
+    display:flex;
+    align-items: center;
+}
+
+.obj{
+    width:5px;
+    height:3rem;
+    background:linear-gradient(45deg,#d766fa ,#02fff2);
+    margin:0 5px;
+    animation:load 1.4s infinite;
+    border-radius: 25%;
+}
+.obj:nth-child(1){
+  animation-delay:0.8s;
+}
+.obj:nth-child(2){
+  animation-delay:0.7s;
+}
+.obj:nth-child(3){
+    animation-delay:0.6s;
+  }
+  .obj:nth-child(4){
+    animation-delay:0.5s;
+  }
+  .obj:nth-child(5){
+    animation-delay:0.4s;
+  }
+  .obj:nth-child(6){
+    animation-delay:0.3s;
+  }
+  .obj:nth-child(7){
+    animation-delay:0.2s;
+  }
+  .obj:nth-child(8){
+    animation-delay:0.1s;
+  }
+  .obj:nth-child(9){
+    animation-delay:0.2s;
+  }
+  .obj:nth-child(10){
+    animation-delay:0.3s;
+  }
+  .obj:nth-child(11){
+    animation-delay:0.4s;
+  }
+  .obj:nth-child(12){
+    animation-delay:0.5s;
+  }
+  .obj:nth-child(13){
+    animation-delay:0.6s;
+  }
+  .obj:nth-child(14){
+    animation-delay:0.7s;
+  }
+  .obj:nth-child(15){
+    animation-delay:0.8s;
+  }
+
+@keyframes load{
+    0%{
+        height:0;
+    }
+    50%{
+        height:3rem;
+    }
+    100%{
+        height:0;
+    }
+}
+#logo path:nth-child(1){
+  stroke-dasharray:159;
+  stroke-dashoffset:159;
+  animation:line-anim 2s ease forwards;
+}
+#logo path:nth-child(2){
+  stroke-dasharray:157;
+  stroke-dashoffset:157;
+  animation:line-anim 2s ease forwards 0.3s;
+
+  
+}
+#logo path:nth-child(3){
+  stroke-dasharray:118;
+  stroke-dashoffset:118;
+  animation:line-anim 2s ease forwards 0.6s ;
+
+}
+#logo path:nth-child(4){
+  stroke-dasharray: 206;
+  stroke-dashoffset:206 ;
+  animation:line-anim 2s ease forwards 0.9s;
+
+}
+#logo path:nth-child(5){
+  stroke-dasharray:149;
+  stroke-dashoffset:149;
+  animation:line-anim 2s ease forwards 1.2s;
+
+}
+#logo path:nth-child(6){
+  stroke-dasharray: 151;
+  stroke-dashoffset:151;
+  animation:line-anim 2s ease forwards 1.5s;
+
+}
+#logo path:nth-child(7){
+  stroke-dasharray: 124;
+  stroke-dashoffset: 124;
+  animation:line-anim 2s ease forwards 1.8s;
+
+}
+
+#logo path:nth-child(8){
+  stroke-dasharray:159;
+  stroke-dashoffset:159;
+  animation:line-anim 2s ease forwards 2.1s;
+}
+#logo path:nth-child(9){
+  stroke-dasharray:159;
+  stroke-dashoffset:159;
+  animation:line-anim 2s ease forwards 2.4s;
+}
+@keyframes line-anim{
+  to{
+      stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill{
+  from{
+      fill:transparent;
+  }
+  to{
+      fill:#ffffff;
+    }
+}
+
+
+@keyframes flyin{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+
+
+/*animation of pre loader ends with stroke animation of sky beats and of loading animation */
+/*animation of main music page begins compatible for medium range mobile*/
+/*include the contents of the album inside the .main class*/ 
+.main{
+width:23.4375rem;
+height:38.3rem;
+background:linear-gradient(to bottom,#9b2eca ,#198AB7,#56DDCE 100% );
+position:absolute;
+z-index: 1;
+overflow: hidden;
+}
+
+.main-contents{
+  padding:10px 5px 25px 10px ;
+  display:flex;
+  justify-content:space-between;
+  border-bottom-right-radius:25px;
+  background:linear-gradient(to top,#072C50,#004A9C,#961ab8);
+}
+
+
+/* design of  hamburger menu  is done */
+
+.burger .line {
+ background-color:#fff;
+ margin:5px 0 2px 0 ;
+ width:25px;
+ height:3px;
+ border-radius: 5%;
+ cursor: pointer;
+ box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+ transition:all 0.5s ease;
+}
+
+
+ 
+
+/* design of darkmode button is done */
+
+.darkmode-btn{
+  position: absolute;
+  top:4.5%;
+  right:0%;
+  transform: translate(-50%,-50%);
+}
+input[type="checkbox"]{
+  position:relative;
+  width:40px;
+  height:16px;
+  -webkit-appearance:none;
+  background: #f1f1f1;
+   outline: none;
+   border-radius:20px;
+   box-shadow:inset 0 0 5px rgba(0,0,0,0.2); 
+   transition:0.5s ;
+   cursor:pointer;
+}
+
+input:checked[type="checkbox"]{
+  background:#54e4fd;
+  box-shadow:inset 0 0 5px rgba(0,0,0,0.2); 
+
+}
+input[type="checkbox"]:before{
+  content:'';
+  position:absolute;
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  top:-2px;
+  left:0;
+  background: #fff;
+  transition:0.6s;
+  transform:scale(1.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+input:checked[type="checkbox"]:before{
+  left:20px;
+}
+
+/* design of logoname is done*/
+.logoname{
+  position:absolute;
+  top:0.6%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  color:#fff;
+ font-family: 'Josefin Sans', sans-serif;
+  font-size:1.5rem;
+}
+
+/* design of flap which moves upward and downward */
+
+
+.flap{
+width:23.4375rem;
+height:35rem;
+background:linear-gradient(#072C50,#004DA3,#d766fa);
+position: absolute;
+top:10%;
+border-top-right-radius: 5%;
+transition: all 0.5s ease;
+z-index: 1;
+}
+
+
+/* design of translate  button associated with flap is done */
+
+.translatebtn{
+  color:#116792;
+  font-size:1.1rem;
+  padding:5px 7px 2px 7px;
+  background:#fff;
+  border-radius:50%;
+  border:3px solid #ffffff;
+  position: absolute;
+  top:-2.5%;
+  right:6%;
+  animation:click 1s linear forwards 2s;
+   z-index: 1;
+   box-shadow:0px 0px 7px 3px #fff;
+}
+/*navigation links are included within .main class */
+.nav-links{
+position:absolute;
+left:0%;
+top:7.5%;
+transform:translateY(-50%);
+z-index:2;
+height:35rem;
+width:8rem;
+background:#f1f1f1;
+display:flex;
+flex-direction: column;
+justify-content:space-around;
+transform: translateX(-100%);
+transition:transform 0.8s ease-in-out;
+padding:0 10px 0 10px;
+}
+
+.nav-links li{
+  list-style: none;
+  opacity:0;
+  text-align: center;
+}
+.nav-links li:nth-child(2){
+  margin:0 0 5rem 0;
+}
+
+.nav-links a{
+  color:#073653;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size:20px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+  
+.nav-active{
+  transform: translateX(0%);
+}
+
+/*keyframes of navigation links is linked to the app.js file*/
+@keyframes navlinkfade{
+  from{
+    opacity:0;
+    transform:translateX(-50px);
+  }
+  to{
+    opacity:1;
+    transform: translateX(0px);
+  }
+}
+
+
+/*toggle class is appended to the burger class for tranformation of 'X' to occur*/ 
+
+
+.toggle .line1{
+  transform:rotate(-45deg) translate(-5px ,6px);
+}
+
+.toggle .line2{
+    opacity:0;
+}
+.toggle .line3{
+  transform:rotate(45deg) translate(-5px ,-6px);
+}
+
+
+/*optional F25C38,F9A03F, linear gradient colours used for this project background:linear-gradient(to bottom ,#1ebed3fd,#072D4A);*/
+
+/*demo image is included within the .flap class and be careful with z-index*/ 
+.images{
+  position:relative;
+  background:rgb(12, 21, 22);
+  margin:0 1px 0 0;
+  padding:0 1px 0 0;
+  height:16rem;
+  width:23.4375rem;
+  border-top-right-radius: 7%;
+  border-bottom-left-radius: 55%;
+  border-bottom-right-radius: 55%;
+  box-shadow:4px 4px 4px 1px #dedfe0;  
+}
+
+/*designing of shuffle and replay button is done*/
+.center-division {
+  z-index: 1;
+  display:flex;
+  justify-content:space-between;
+  
+}
+.center-division a:nth-child(1){
+  position:absolute;
+   color:#f1f1f1;
+   font-size:1.3rem;
+   top:45%;
+   left:8%;
+}
+.center-division a:nth-child(2){
+  position:absolute;
+  color:#f1f1f1;
+  font-size:1.3rem;
+  top:45%;
+  right:8%;
+}
+/*designing of shuffle and replay button ends*/
+/*design of artist name and songname begins */
+
+
+.mid-division{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  color:white;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+.songname{
+  transition:all 0.5s ease;
+  cursor:pointer;
+}
+.songname:before{
+  transform:scale(0);
+}
+.songname:hover{
+  transform:scale(1.1);
+
+}
+
+.midlower-division{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  color:#ffffff;
+  font-size:1rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  letter-spacing: 1px;
+  position:absolute;
+  left:50%;
+  top:65%;
+  transform:translate(-50%,-50%);
+}
+
+.Artist{
+  transition:all 0.5s ease;
+  cursor:pointer;
+}
+.Artist:before{
+  transform:scale(0);
+}
+.Artist:hover{
+  transform:scale(1.1);
+}
+
+
+/*design of artist name and songname begins */
+/*design of last division which includes .play class and pause
+ button with opacity '0' remove it to see pause button and animation in javascript */
+.last-division{
+  position:absolute;
+  z-index: 2;
+  display:flex;
+  top:90%;
+  left:50%;
+  transform:translate(-50%,-50%);
+
+}
+
+.last-division i.fas.fa-backward ,.last-division i.fas.fa-forward {
+     margin:0 3.5rem 0 3.5rem;
+     font-size:1.5rem;
+     color:#ffffff;
+    padding:15px;
+    border-radius:50%;
+  transition:all 0.5s ease-in;
+
+}
+
+
+.play{
+  padding:0 2rem 0 2rem;
+}
+.play i.fas.fa-play,.play i.fas.fa-pause{  
+  position:absolute;
+  left:50%;
+  top:-3%;
+  transform:translateX(-50%);
+  font-size:1.8rem;
+  color:#ffffff;
+}
+
+.play i.fas.fa-pause{
+  opacity:0;
+}
+
+.play i.fas.fa-play{
+  padding:15px;
+  border-radius:50%;
+  transition:all 0.1ms ease-in;
+}
+
+.play i.fas.fa-play:active{
+background:#c4c4c460;
+box-shadow: 0px 0px 5px 3px #f1f1f1;
+}
+
+
+i.fas.fa-backward:hover, i.fas.fa-forward:hover{
+  background:#c4c4c457;
+  box-shadow: 0px 0px 5px 3px #f1f1f1; 
+}
+
+i.fa.fa-random:hover,i.fas.fa-redo-alt:hover{
+  background:#c4c4c457;
+  box-shadow: 0px 0px 10px 5px #f1f1f1; 
+}
+i.fa.fa-random,i.fas.fa-redo-alt{
+  padding:15px;
+  border-radius:50%;
+  transition:all 0.5s ease-in;
+}
+
+/*progress bar begins*/
+.progress-bar{
+  position:absolute;
+  top:83.5%;
+  left:2%;
+  width:95%;
+  height:4px;
+  background:#f7d4f4;
+  cursor:pointer;
+  border-radius:10%;
+  z-index:2 ;
+}
+.progress-fill{
+  position:relative;
+  width:10%;
+  height:4px;
+  background:linear-gradient(#8659aa,#01438A);
+}
+
+/*change the progress fill width to make the progress bar filled*/
+
