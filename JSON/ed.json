@@ -1,0 +1,46 @@
+{
+    "songs": [
+        {
+            "name": "Castle on the Hill",
+            "src": "./songs/Ed/Ed Sheeran - Castle on the Hill.mp3",
+            "artist":"Ed Sheeran",
+            "pic":"./songsimg/Ed/castle.jpg"
+        },
+        {
+            "name": "Photograph",
+            "src": "./songs/Ed/Ed Sheeran - Photograph.mp3",
+            "artist":"Ed Sheeran",
+            "pic":"./songsimg/Ed/photograph.jpg"
+        },
+        {
+            "name": "Thinking Out Loud",
+            "src": "./songs/Ed/Ed Sheeran - Thinking Out Loud.mp3",
+            "artist":"Ed Sheeran",
+            "pic":"./songsimg/Ed/thinking.jpg"
+        },
+        {
+            "name": "Beautiful People",
+            "src": "./songs/Ed/Ed Sheeran feat. Khalid - Beautiful People.mp3",
+            "artist":"Ed Sheeran",
+            "pic":"./songsimg/Ed/beautiful.jpg"
+        },
+        {
+            "name": "I don't Care",
+            "src": "./songs/Ed/Ed Sheeran, Justin Bieber - I Dont Care.mp3",
+            "artist":"Ed Sheeran",
+            "pic":"./songsimg/Ed/idont.jpg"
+        },
+        {
+            "name": "Perfect (Acoustic)",
+            "src": "./songs/Ed/PERFECT - Ed Sheeran.mp3",
+            "artist":"Ed Sheeran",
+            "pic":"./songsimg/Ed/perfect.jpg"
+        },
+        {
+            "name": "Shape of You (Mashup)",
+            "src": "./songs/Ed/Shape of you - ED SHEERAN.mp3",
+            "artist":"Ed Sheeran",
+            "pic":"./songsimg/Ed/shape.jpg"
+        }
+    ]
+}

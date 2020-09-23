@@ -1,0 +1,46 @@
+{
+    "songs": [
+        {
+            "name": "Ae Dil Hain Mushkil",
+            "src": "./songs/Arjit/Arijit Singh - Ae Dil Hai Mushkil.mp3",
+            "artist":"Arjit Singh",
+            "pic":"./songsimg/Arjit/aedil.jpg"
+        },
+        {
+            "name": "Channa Mereya",
+            "src": "./songs/Arjit/Arijit Singh - Channa Mereya.mp3",
+            "artist":"Arjit Singh",
+            "pic":"./songsimg/Arjit/channa.jpg"
+        },
+        {
+            "name": "Khairiyat",
+            "src": "./songs/Arjit/Arijit Singh - Khairiyat.mp3",
+            "artist":"Arjit Singh",
+            "pic":"./songsimg/Arjit/khariyiat.jpg"
+        },
+        {
+            "name": "Nashe Si Chad Gayi",
+            "src": "./songs/Arjit/Arijit Singh - Nashe Si Chadh Gayi.mp3",
+            "artist":"Arjit Singh",
+            "pic":"./songsimg/Arjit/nashe.jpg"
+        },
+        {
+            "name": "Kalank",
+            "src": "./songs/Arjit/Arijit Singh & Pritam - Kalank - Title Track.mp3",
+            "artist":"Arjit Singh",
+            "pic":"./songsimg/Arjit/kalank.jpg"
+        },
+        {
+            "name": "Tum hi ho",
+            "src": "./songs/Arjit/Arjit Singh - Tum Hi Ho.mp3",
+            "artist":"Arjit Singh",
+            "pic":"./songsimg/Arjit/tum.jpg"
+        },
+        {
+            "name": "Hawayein",
+            "src": "./songs/Arjit/Pritam, Arijit Singh - Hawayein.mp3",
+            "artist":"Arjit Singh",
+            "pic":"./songsimg/Arjit/hawa.jpg"
+        }
+    ]
+}

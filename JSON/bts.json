@@ -1,0 +1,46 @@
+{
+    "songs": [
+        {
+            "name": "BTS Cypher",
+            "src": "./songs/BTS/BTS - BTS Cypher 4.mp3",
+            "artist":"BTS",
+            "pic":"./songsimg/BTS/cypher.jpg"
+        },
+        {
+            "name": "BTS Butterfly",
+            "src": "./songs/BTS/BTS - Butterfly.mp3",
+            "artist":"BTS",
+            "pic":"./songsimg/BTS/butterfly.jpg"
+        },
+        {
+            "name": "BTS DOPE",
+            "src": "./songs/BTS/BTS - DOPE.mp3",
+            "artist":"BTS",
+            "pic":"./songsimg/BTS/dope.jpg"
+        },
+        {
+            "name": "BTS FIRE",
+            "src": "./songs/BTS/BTS - FIRE.mp3",
+            "artist":"BTS",
+            "pic":"./songsimg/BTS/fire.jpg"
+        },
+        {
+            "name": "BTS RUN",
+            "src": "./songs/BTS/BTS - RUN.mp3",
+            "artist":"BTS",
+            "pic":"./songsimg/BTS/run.jpg"
+        },
+        {
+            "name": "BTS Save Me",
+            "src": "./songs/BTS/BTS - Save Me.mp3",
+            "artist":"BTS",
+            "pic":"./songsimg/BTS/saveme.jpg"
+        },
+        {
+            "name": "BTS Young Forever",
+            "src": "./songs/BTS/BTS - Young Forever.mp3",
+            "artist":"BTS",
+            "pic":"./songsimg/BTS/young.jpg"
+        }
+    ]
+}

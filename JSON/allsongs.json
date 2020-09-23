@@ -1,0 +1,174 @@
+{
+    "songs": [
+        {
+            "name": "Ae Dil Hain Mushkil",
+            "src": "./songs/Arjit/Arijit Singh - Ae Dil Hai Mushkil.mp3",
+            "artist":"Arjit Singh",
+            "pic":"./songsimg/Arjit/aedil.jpg"
+        },
+        {
+            "name": "Channa Mereya",
+            "src": "./songs/Arjit/Arijit Singh - Channa Mereya.mp3",
+            "artist":"Arjit Singh",
+            "pic":"./songsimg/Arjit/channa.jpg"
+        },
+        {
+            "name": "Khairiyat",
+            "src": "./songs/Arjit/Arijit Singh - Khairiyat.mp3",
+            "artist":"Arjit Singh",
+            "pic":"./songsimg/Arjit/khariyiat.jpg"
+        },
+        {
+            "name": "Nashe Si Chad Gayi",
+            "src": "./songs/Arjit/Arijit Singh - Nashe Si Chadh Gayi.mp3",
+            "artist":"Arjit Singh",
+            "pic":"./songsimg/Arjit/nashe.jpg"
+        },
+        {
+            "name": "Kalank",
+            "src": "./songs/Arjit/Arijit Singh & Pritam - Kalank - Title Track.mp3",
+            "artist":"Arjit Singh",
+            "pic":"./songsimg/Arjit/kalank.jpg"
+        },
+        {
+            "name": "Tum hi ho",
+            "src": "./songs/Arjit/Arjit Singh - Tum Hi Ho.mp3",
+            "artist":"Arjit Singh",
+            "pic":"./songsimg/Arjit/tum.jpg"
+        },
+        {
+            "name": "Hawayein",
+            "src": "./songs/Arjit/Pritam, Arijit Singh - Hawayein.mp3",
+            "artist":"Arjit Singh",
+            "pic":"./songsimg/Arjit/hawa.jpg"
+        },
+        {
+            "name": "BTS Cypher",
+            "src": "./songs/BTS/BTS - BTS Cypher 4.mp3",
+            "artist":"BTS",
+            "pic":"./songsimg/BTS/cypher.jpg"
+        },
+        {
+            "name": "BTS Butterfly",
+            "src": "./songs/BTS/BTS - Butterfly.mp3",
+            "artist":"BTS",
+            "pic":"./songsimg/BTS/butterfly.jpg"
+        },
+        {
+            "name": "BTS DOPE",
+            "src": "./songs/BTS/BTS - DOPE.mp3",
+            "artist":"BTS",
+            "pic":"./songsimg/BTS/dope.jpg"
+        },
+        {
+            "name": "BTS FIRE",
+            "src": "./songs/BTS/BTS - FIRE.mp3",
+            "artist":"BTS",
+            "pic":"./songsimg/BTS/fire.jpg"
+        },
+        {
+            "name": "BTS RUN",
+            "src": "./songs/BTS/BTS - RUN.mp3",
+            "artist":"BTS",
+            "pic":"./songsimg/BTS/run.jpg"
+        },
+        {
+            "name": "BTS Save Me",
+            "src": "./songs/BTS/BTS - Save Me.mp3",
+            "artist":"BTS",
+            "pic":"./songsimg/BTS/saveme.jpg"
+        },
+        {
+            "name": "BTS Young Forever",
+            "src": "./songs/BTS/BTS - Young Forever.mp3",
+            "artist":"BTS",
+            "pic":"./songsimg/BTS/young.jpg"
+        },
+        {
+            "name": "Castle on the Hill",
+            "src": "./songs/Ed/Ed Sheeran - Castle on the Hill.mp3",
+            "artist":"Ed Sheeran",
+            "pic":"./songsimg/Ed/castle.jpg"
+        },
+        {
+            "name": "Photograph",
+            "src": "./songs/Ed/Ed Sheeran - Photograph.mp3",
+            "artist":"Ed Sheeran",
+            "pic":"./songsimg/Ed/photograph.jpg"
+        },
+        {
+            "name": "Thinking Out Loud",
+            "src": "./songs/Ed/Ed Sheeran - Thinking Out Loud.mp3",
+            "artist":"Ed Sheeran",
+            "pic":"./songsimg/Ed/thinking.jpg"
+        },
+        {
+            "name": "Beautiful People",
+            "src": "./songs/Ed/Ed Sheeran feat. Khalid - Beautiful People.mp3",
+            "artist":"Ed Sheeran",
+            "pic":"./songsimg/Ed/beautiful.jpg"
+        },
+        {
+            "name": "I don't Care",
+            "src": "./songs/Ed/Ed Sheeran, Justin Bieber - I Dont Care.mp3",
+            "artist":"Ed Sheeran",
+            "pic":"./songsimg/Ed/idont.jpg"
+        },
+        {
+            "name": "Perfect",
+            "src": "./songs/Ed/PERFECT - Ed Sheeran.mp3",
+            "artist":"Ed Sheeran",
+            "pic":"./songsimg/Ed/perfect.jpg"
+        },
+        {
+            "name": "Shape of You",
+            "src": "./songs/Ed/Shape of you - ED SHEERAN.mp3",
+            "artist":"Ed Sheeran",
+            "pic":"./songsimg/Ed/shape.jpg"
+        },
+        {
+            "name": "Ritviz Barso",
+            "src": "./songs/ritviz/Ritviz - Barso (-LIVE- Cut From Armin Set)-enTc.mp3",
+            "artist":"Ritviz",
+            "pic":"./songsimg/Ritviz/barso.jpg"
+        },
+        {
+            "name": "Ritviz Jeet",
+            "src": "./songs/ritviz/Ritviz - Jeet 2.0.mp3",
+            "artist":"Ritviz",
+            "pic":"./songsimg/Ritviz/jeet.jpg"
+        },
+        {
+            "name": "Ritviz Jeet ",
+            "src": "./songs/ritviz/Ritviz - Jeet.mp3",
+            "artist":"Ritviz",
+            "pic":"./songsimg/Ritviz/jeet2.jpg"
+        },
+        {
+            "name": "Ritviz Sage",
+            "src": "./songs/ritviz/Ritviz - Sage [Official Music Video].mp3",
+            "artist":"Ritviz",
+            "pic":"./songsimg/Ritviz/sage.jpg"
+        },
+        {
+            "name": "Ritviz Thandi Hawa",
+            "src": "./songs/ritviz/Ritviz - Thandi Hawa.mp3",
+            "artist":"Ritviz",
+            "pic":"./songsimg/Ritviz/thandi.jpg"
+        },
+        {
+            "name": "Ritviz Udd Gaye",
+            "src": "./songs/ritviz/Ritviz - Udd Gaye (Bacardi House Party Sessions).mp3",
+            "artist":"Ritviz",
+            "pic":"./songsimg/Ritviz/udd.jpg"
+        },
+        {
+            "name": "Ritviz Chalo Chalein",
+            "src": "./songs/ritviz/Ritviz feat. Seedhe Maut - Chalo Chalein.mp3",
+            "artist":"Ritviz",
+            "pic":"./songsimg/Ritviz/chalo.jpg"
+        }
+
+    ]
+}
+    
