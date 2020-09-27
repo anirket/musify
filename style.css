@@ -29,7 +29,7 @@ body {
   position: relative;
   overflow: hidden;
   z-index: 3;
-   display: none; 
+   /* display: none;  */
 }
 
 #logo {
@@ -250,11 +250,13 @@ body {
   width: 25px;
   height: 3px;
   border-radius: 5%;
-  cursor: pointer;
+  
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: all 0.5s ease;
 }
-
+.burger{
+  cursor: pointer;
+}
 /* design of darkmode button is done */
 
 .darkmode-btn {
@@ -630,6 +632,7 @@ i.fa.fa-random, i.fas.fa-redo-alt {
 
 .artist1 {
   margin-left: 3.9rem;
+  text-align: center;
 }
 
 .artist2 {
@@ -737,7 +740,7 @@ transform:scale(1);
 
 /*accessing the songlist is what needed to be fixed or by songselect classname */
 
-.darkmodeactivatedsongs{
+.songlist .darkmodeactivatedsongs{
   background-image: linear-gradient( #5e338f,#1b1b1b);
     
 }
@@ -746,6 +749,7 @@ transform:scale(1);
 .darkmodeprogress{
   background: linear-gradient( #450b80,#f8b3f2 );
 }
+
 
 
 /* for tablets */
@@ -782,12 +786,19 @@ transform:scale(1);
     margin-top: 0.5rem;
     border-radius: 10%;
   }
+  .songlist .songselect{
+    width: 21vw;
+  }
 }
 
 /* for mobile */
 
 @media only screen and (max-width:600px) {
   /* albums */
+  .Artist{
+    width: 50vw;
+    text-align: center;
+  }
   .main {
     width: 100vw;
     height: 100vh;

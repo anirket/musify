@@ -7,12 +7,14 @@ let arjitsongs, edsongs, btssongs, ritvizsongs, allsongs;
 const albumsorsongs = document.querySelector(".albumsorsongs");
 const albums = document.querySelector(".albums");
 const showalbums = document.querySelector(".showalbums");
+let checked = false;
 let selectedartist;
 let nametodisplay;
 let imgsrc;
 let currentsong;
 let currentsongvalue;
 let selectedlist;
+let songsactivated = false;
 let a = 1; //flap is initially down
 
 //grab all buttons
@@ -35,8 +37,8 @@ let albumhtmlcontent = `
 
 <div class="albums">
 <div class="albumsection1">
-    <div class="albumdiv album1"><img src="./artistimg/ritviz.jpg" alt=""></div>
-    <span class="artistname artist1">Ritviz </span>
+    <div class="albumdiv album1"><img src="./artistimg/SPB.jpg" alt=""></div>
+    <span class="artistname artist1">S P B </span>
     <div class="albumdiv album2"><img src="./artistimg/BTS.jpg" alt=""></div>
     <span class="artistname artist2">BTS </span>
 </div>
@@ -148,6 +150,7 @@ fetch("./JSON/ritviz.json")
     .then((data) => data.json())
     .then((data) => {
         ritvizsongs = data;
+        console.log(ritvizsongs);
     })
 fetch("./JSON/allsongs.json")
     .then((data) => data.json())
@@ -161,9 +164,11 @@ albumsorsongs.addEventListener("click", (e) => {
     // console.log(e.target.parentElement);
 
     if (e.target.parentElement.classList.contains("albumdiv")) {
+
+
         if (e.target.parentElement.classList.contains("album1")) {
-            imgsrc = `./artistimg/ritviz.jpg`;
-            nametodisplay = "Ritviz"
+            imgsrc = `./artistimg/SPB.jpg`;
+            nametodisplay = "S P Balasubramaniam"
             selectedartist = ritvizsongs.songs;
             albumsorsongs.innerHTML = `
 
@@ -173,7 +178,7 @@ albumsorsongs.addEventListener("click", (e) => {
         <ul class="songlist">
         
         </ul>
-        </div>"
+        </div>
         
         `;
             const songlist = document.querySelector(".songlist")
@@ -183,6 +188,15 @@ albumsorsongs.addEventListener("click", (e) => {
                 li.innerHTML = `${song.name}<i class="fas fa-music"></i>`;
                 songlist.appendChild(li);
             })
+
+            if (checked) {
+                const dsong = document.querySelectorAll("li")
+                console.log(dsong);
+                dsong.forEach((song) => {
+                    song.classList.add("darkmodeactivatedsongs")
+                })
+            }
+            songsactivated = true;
 
         }
         else if (e.target.parentElement.classList.contains("album2")) {
@@ -197,7 +211,7 @@ albumsorsongs.addEventListener("click", (e) => {
         <ul class="songlist">
         
         </ul>
-        </div>"
+        </div>
         
         `;
             const songlist = document.querySelector(".songlist")
@@ -207,6 +221,15 @@ albumsorsongs.addEventListener("click", (e) => {
                 li.innerHTML = `${song.name}<i class="fas fa-music"></i>`;
                 songlist.appendChild(li);
             })
+
+            if (checked) {
+                const dsong = document.querySelectorAll("li")
+                console.log(dsong);
+                dsong.forEach((song) => {
+                    song.classList.add("darkmodeactivatedsongs")
+                })
+            }
+            songsactivated = true;
         }
         else if (e.target.parentElement.classList.contains("album3")) {
             imgsrc = `./artistimg/arjit.jpg`
@@ -219,7 +242,7 @@ albumsorsongs.addEventListener("click", (e) => {
         <ul class="songlist">
         
         </ul>
-        </div>"
+        </div>
         
         `;
             const songlist = document.querySelector(".songlist")
@@ -230,8 +253,18 @@ albumsorsongs.addEventListener("click", (e) => {
                 songlist.appendChild(li);
             })
 
+            if (checked) {
+                const dsong = document.querySelectorAll("li")
+                console.log(dsong);
+                dsong.forEach((song) => {
+                    song.classList.add("darkmodeactivatedsongs")
+                })
+            }
+            songsactivated = true;
+
         }
         else {
+            songsactivated = false;
             imgsrc = `./artistimg/ed.jpg`;
             nametodisplay = "Ed Sheeran"
             selectedartist = edsongs.songs;
@@ -243,7 +276,7 @@ albumsorsongs.addEventListener("click", (e) => {
         <ul class="songlist">
         
         </ul>
-        </div>"
+        </div>
         
         `;
             const songlist = document.querySelector(".songlist")
@@ -253,19 +286,28 @@ albumsorsongs.addEventListener("click", (e) => {
                 li.innerHTML = `${song.name}<i class="fas fa-music"> </i>`;
                 songlist.appendChild(li);
             })
+
+            if (checked) {
+                const dsong = document.querySelectorAll("li")
+                console.log(dsong);
+                dsong.forEach((song) => {
+                    song.classList.add("darkmodeactivatedsongs")
+                })
+            }
+            songsactivated = true;
         }
     }
 
     else if (e.target.classList.contains("songselect")) {
+        console.log("here");
         //all further 
         audio.currentTime = 0;
-
+        console.log(selectedartist);
         selectedartist.forEach((song, index) => {
-
             if (e.target.innerText === song.name) {
-
+                console.log(e.target.innerText);
                 selectedlist = e.target;
-                console.log(song);
+
                 audio.src = song.src;
                 currentsong = song;
                 currentsongvalue = index;
@@ -335,6 +377,11 @@ audio.addEventListener("timeupdate", () => {
 
     progressFill.style.width = `${progressvalue * 100}%`
     // console.log(progressvalue);
+
+
+    if (audio.ended) {
+        nextsong();
+    }
 })
 
 //backward song
@@ -353,7 +400,11 @@ previoussong.addEventListener("click", () => {
 })
 
 //forward song
-forwardsong.addEventListener("click", () => {
+forwardsong.addEventListener("click", nextsong)
+
+
+
+function nextsong() {
     audio.currentTime = 0;
     if (currentsongvalue === selectedartist.length - 1) {
         currentsongvalue = 0;
@@ -365,7 +416,7 @@ forwardsong.addEventListener("click", () => {
     playorpause.innerHTML = `<i class="fas fa-pause"></i>`;
     flapupdate();
     audio.play();
-})
+}
 
 //update flap
 const flapupdate = () => {
@@ -400,31 +451,65 @@ shuffle.addEventListener("click", () => {
 
 })
 
-
+//dark mode
 const dflap = document.querySelector(".flap")
 const darkmodebtn = document.querySelector(".darkmode-btn");
 const input = document.querySelector("input");
 const dheader = document.querySelector(".main-contents")
 const dmain = document.querySelector(".main")
-const dsong = document.querySelector("li .songselect")
-const dprogressfill = document.querySelector(".progress-fill")
-input.addEventListener('click',darkmodefunction)
-function darkmodefunction(){
-    
-    dflap.classList.toggle("darkmodeactivatedflap")
-    dheader.classList.toggle("darkmodeactivatedheader")
-    dmain.classList.toggle("darkmodeactivatedmain")
-    dprogressfill.classList.toggle("darkmodeprogress")
-    dsong.classList.toggle("darkmodeactivatedsongs")
 
-    if(dflap.classList[0] === "darkmodeactivatedflap"|| dheader.classList[0]==="darkmodeactivatedheader"
-    ||dmain.classList[0]==="darkmodeactivatedmain"||dprogressfill.classList[0]==="darkmodeprogress" 
-    ||dsong.classList[0]==="darkmodeactivatedsongs"){
-                
- //the darkmodeactivatedsongs has to be rectified please do note this        
-darkmodebtn.innerHTML = `<input  type="checkbox" name="">`;
-                
+
+const dprogressfill = document.querySelector(".progress-fill")
+input.addEventListener('click', darkmodefunction)
+function darkmodefunction() {
+
+    checked = !checked;
+
+    if (checked) {
+
+        dflap.classList.add("darkmodeactivatedflap")
+        dheader.classList.add("darkmodeactivatedheader")
+        dmain.classList.add("darkmodeactivatedmain")
+        dprogressfill.classList.add("darkmodeprogress")
+
+
+        if (songsactivated) {
+            const dsong = document.querySelectorAll("li")
+            console.log(dsong);
+            dsong.forEach((song) => {
+                song.classList.add("darkmodeactivatedsongs")
+            })
+        }
     }
-    
+
+    else {
+
+
+        dflap.classList.remove("darkmodeactivatedflap")
+        dheader.classList.remove("darkmodeactivatedheader")
+        dmain.classList.remove("darkmodeactivatedmain")
+        dprogressfill.classList.remove("darkmodeprogress")
+
+
+        if (songsactivated) {
+            const dsong = document.querySelectorAll("li")
+            console.log(dsong);
+            dsong.forEach((song) => {
+                song.classList.remove("darkmodeactivatedsongs")
+            })
+
+
+
+
+        }
+
+
+
+        // dsong.classList.toggle("darkmodeactivatedsongs")
+
+
+    }
 }
+
+
 

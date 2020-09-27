@@ -1,46 +1,46 @@
 {
     "songs": [
         {
-            "name": "Ritviz Barso",
-            "src": "./songs/ritviz/Ritviz - Barso (-LIVE- Cut From Armin Set)-enTc.mp3",
-            "artist":"Ritviz",
-            "pic":"./songsimg/Ritviz/barso.jpg"
+            "name": "Telusa Manasa (Telgu)",
+            "src": "./songs/ritviz/1.m4a",
+            "artist":"S P  Balasubramaniam",
+            "pic":"./songsimg/Ritviz/TM.jpg"
         },
         {
-            "name": "Ritviz Jeet 2.0",
-            "src": "./songs/ritviz/Ritviz - Jeet 2.0.mp3",
-            "artist":"Ritviz",
-            "pic":"./songsimg/Ritviz/jeet.jpg"
+            "name": "Kuchiku Kuchiku (Kannada)",
+            "src": "./songs/ritviz/2.m4a",
+            "artist":"S P  Balasubramaniam",
+            "pic":"./songsimg/Ritviz/KK.jpg"
         },
         {
-            "name": "Ritviz Jeet",
-            "src": "./songs/ritviz/Ritviz - Jeet.mp3",
-            "artist":"Ritviz",
-            "pic":"./songsimg/Ritviz/jeet2.jpg"
+            "name": "E Bhoomi Bannada",
+            "src": "./songs/ritviz/3.m4a",
+            "artist":"S P  Balasubramaniam",
+            "pic":"./songsimg/Ritviz/EBB.jpg"
         },
         {
-            "name": "Ritviz Sage",
-            "src": "./songs/ritviz/Ritviz - Sage [Official Music Video].mp3",
-            "artist":"Ritviz",
-            "pic":"./songsimg/Ritviz/sage.jpg"
+            "name": "Pehla Pehla Pyaar Hain",
+            "src": "./songs/ritviz/4.m4a",
+            "artist":"S P  Balasubramaniam",
+            "pic":"./songsimg/Ritviz/PPPY.jpg"
         },
         {
-            "name": "Ritviz Thandi Hawa",
-            "src": "./songs/ritviz/Ritviz - Thandi Hawa.mp3",
-            "artist":"Ritviz",
-            "pic":"./songsimg/Ritviz/thandi.jpg"
+            "name": "Pellante norella Panta",
+            "src": "./songs/ritviz/5.m4a",
+            "artist":"S P  Balasubramaniam",
+            "pic":"./songsimg/Ritviz/PN.jpg"
         },
         {
-            "name": "Ritviz Udd Gaye",
-            "src": "./songs/ritviz/Ritviz - Udd Gaye (Bacardi House Party Sessions).mp3",
-            "artist":"Ritviz",
-            "pic":"./songsimg/Ritviz/udd.jpg"
+            "name": "Tere Mere Beech Me",
+            "src": "./songs/ritviz/6.m4a",
+            "artist":"S P  Balasubramaniam",
+            "pic":"./songsimg/Ritviz/TMBM.jpg"
         },
         {
-            "name": "Ritviz Chalo Chalein",
-            "src": "./songs/ritviz/Ritviz feat. Seedhe Maut - Chalo Chalein.mp3",
-            "artist":"Ritviz",
-            "pic":"./songsimg/Ritviz/chalo.jpg"
+            "name": "Kalladre Nanu",
+            "src": "./songs/ritviz/7.m4a",
+            "artist":"S P  Balasubramaniam",
+            "pic":"./songsimg/Ritviz/KN.jpg"
         }
     ]
 }
