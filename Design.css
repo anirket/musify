@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lobster+Two&display=swap');
+
+
+
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(to  bottom, #010615 ,#061949 );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height:100vh;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+
+/*entire section is wrapped in this with this class  animation design*/
+
+.container{
+    width:300px;
+    height:400px;
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:3rem;
+    transition:0.5s;
+    background: #060c21;
+
+}
+.container:hover{
+    height:570px;
+}
+
+.container .img1,.container .img2{
+    position:absolute;
+  min-width:100%;
+    height: 100%;
+    padding:10px;
+
+}
+.img1 img,.img2 img{
+    position:absolute;
+    top:0%;
+    left:0%;
+    width:100%;
+    height:400px;
+}
+
+/*separated to avoid confusion animation design*/
+
+.img1 img,.img2 img{
+    opacity:0.5;
+    transition:0.5s ease-in-out;
+    max-width: 100%;
+}
+
+.container:hover .img1 img,.container:hover .img2 img{
+    opacity:1;
+}
+.container:before{
+    content:'';
+    position:absolute;
+    top:-2px;
+    left:-2px;
+    right:-2px;
+    bottom:-2px;
+    background: #fff;
+    z-index: -1;
+}
+
+.container:after{
+    content:'';
+    position:absolute;
+    top:-2px;
+    left:-2px;
+    right:-2px;
+    bottom:-2px;
+    background:#fff;
+    z-index:-2;
+    filter:blur(40px);
+}
+.container:nth-child(1):before,.container:nth-child(1):after{
+    background: linear-gradient(235deg,#89ff00,#043185,#00bcd4);
+}
+.container:nth-child(2):before,.container:nth-child(2):after{
+    background: linear-gradient(235deg,#ff005e,#043185,#772aff);
+}
+/*content animation design*/
+
+.container .content{
+    position:absolute;
+    top:80%;
+    left:0px;
+    right:10px;
+    bottom:1px;
+    height:1px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    opacity:0;
+    transition: 0.3s ease;
+    text-align: center; 
+     width:100%;
+
+}
+
+.container:hover .content{
+    opacity:1;
+}
+
+.container .content h2{
+   font-size:1.5rem;
+font-family: 'Josefin Sans', sans-serif;
+color:#fff;
+
+}
+
+.container .content .Developer{
+    letter-spacing: 2px;
+}
+.container .content .Developer .subtitle{
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Lobster Two', cursive;
+}
+
+.container .content .Developer .contribution{
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+
+
+/*social icons  animation design slight disrupt is present if u find what it is try to fix*/
+
+.container .content .social-icons{
+    position:absolute;
+    top:10%;
+    transform:translateY(30%);
+    display:flex;
+    padding:1rem;
+    margin:0.3rem 1rem;
+}
+.social-icons .btn{
+    margin:5px 15px 0 15px;
+    background:#fff;
+    width:50px;
+    height:50px;
+    border-radius: 35%;
+    padding-top:5px;
+    box-shadow:0 0 10px 3px #aaa;
+    overflow: hidden;
+    position:relative;
+    font-size: 2rem;
+   z-index: 1;
+   pointer-events: initial;
+   color:#060727 ;
+
+
+}
+.social-icons  .btn i{
+    transition:all 0.5s linear;
+    line-height: 40px;
+}
+.social-icons  .btn i:hover{
+    transform: scale(1.1);
+    color:#fff ;  
+}
+
+.social-icons .btn::before{
+    content:'';
+    position:absolute;
+    width:120%;
+    height:120%;
+    background:#060727;
+    transform: rotate(45deg);
+    left:-110%;
+    top:90%;
+
+}
+.social-icons .btn:hover::before{
+    animation:anim 0.8s alternate;
+    top:-10%;
+   left:-10%;
+ 
+}
+
+@keyframes anim{
+    0%{
+        left:-110%;
+        top:90%;
+    }
+    50%{
+        left:10%;
+        top:-30%;
+    }
+    100%{
+        top:-10%;
+        left:-10%;
+    }
+}
+
+/*button animation design*/
+.button{
+    position:absolute;
+    top:6%;
+    transform: translateY(-50%);
+    color:#1779ff;
+    padding:15px 20px;
+    font-size:30px;
+    text-decoration:none ;
+    letter-spacing: 2px;
+    box-shadow:0 20px 40px rgba(28, 47, 133, 0.5) ;
+    background-color:#0c002b;
+    font-family: 'Josefin sans';
+    overflow: hidden;
+    transition:all 0.5s ease-out;
+    flex-wrap: wrap;
+    margin: 0.5rem 0 0 0 ;
+    
+}
+.button:hover{
+    box-shadow:0 0 20px 10px  rgba(47, 68, 163, 0.9) ;
+}
+
+
+.button:before{
+    content: '';
+    position: absolute;
+    top:2px;
+    left:2px;
+    bottom:2px;
+    width:50%;
+    background:rgba(255, 255, 255, 0.2);
+}
+.button span:nth-child(1){
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:2px;
+    background:linear-gradient(to right ,#0c002b,#1779ff);
+    animation:animate1 2s linear  infinite; 
+    animation-delay: 1s;
+    
+}
+@keyframes animate1{
+  0%{
+       transform:translateX(-100%);
+  }
+  100%{
+    transform:translateX(100%);
+}
+}
+.button span:nth-child(2){
+    position: absolute;
+    top:0;
+    right:0;
+    width:2px;
+    height:100%;
+    background:linear-gradient(to bottom ,#0c002b,#1779ff);
+    animation:animate2 2s linear  infinite; 
+
+}
+@keyframes animate2{
+    0%{
+         transform:translateY(-100%);
+    }
+    100%{
+      transform:translateY(100%);
+  }
+  }
+
+
+.button span:nth-child(3){
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:2px;
+    background:linear-gradient(to left ,#0c002b,#1779ff);
+    animation:animate3 2s linear  infinite; 
+    animation-delay: 1s;
+   
+}
+@keyframes animate3{
+    0%{
+         transform:translateX(100%);
+    }
+    100%{
+      transform:translateX(-100%);
+      }
+  }
+.button span:nth-child(4){
+    position: absolute;
+    top:0;
+    left:0;
+    width:2px;
+    height:100%;
+    background:linear-gradient(to top ,#0c002b,#1779ff);
+    animation:animate4 2s linear  infinite; 
+    
+}
+@keyframes animate4{
+    0%{
+         transform:translateY(100%);
+    }
+    100%{
+      transform:translateY(-100%);
+      }
+  }
+
+  @media only screen and (max-width:500px){
+      .contain{
+          margin-top:6rem;
+      }
+      .container{
+          width:90vw;
+          
+      }
+  }

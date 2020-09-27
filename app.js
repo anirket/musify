@@ -81,7 +81,7 @@ translatebtn.addEventListener('click', move)
 //toggle flap
 function move() {
     translatebtn.style.transition = "all 1.5s";
-    flap.style.transition = "all 1.5s";
+    flap.style.transition = "all 1.5s ease";
     images.style.transition = "all 1.5s ease";
     if (a === 0) {
         //going down
@@ -401,7 +401,30 @@ shuffle.addEventListener("click", () => {
 })
 
 
+const dflap = document.querySelector(".flap")
+const darkmodebtn = document.querySelector(".darkmode-btn");
+const input = document.querySelector("input");
+const dheader = document.querySelector(".main-contents")
+const dmain = document.querySelector(".main")
+const dsong = document.querySelector("li .songselect")
+const dprogressfill = document.querySelector(".progress-fill")
+input.addEventListener('click',darkmodefunction)
+function darkmodefunction(){
+    
+    dflap.classList.toggle("darkmodeactivatedflap")
+    dheader.classList.toggle("darkmodeactivatedheader")
+    dmain.classList.toggle("darkmodeactivatedmain")
+    dprogressfill.classList.toggle("darkmodeprogress")
+    dsong.classList.toggle("darkmodeactivatedsongs")
 
-
-
+    if(dflap.classList[0] === "darkmodeactivatedflap"|| dheader.classList[0]==="darkmodeactivatedheader"
+    ||dmain.classList[0]==="darkmodeactivatedmain"||dprogressfill.classList[0]==="darkmodeprogress" 
+    ||dsong.classList[0]==="darkmodeactivatedsongs"){
+                
+ //the darkmodeactivatedsongs has to be rectified please do note this        
+darkmodebtn.innerHTML = `<input  type="checkbox" name="">`;
+                
+    }
+    
+}
 
