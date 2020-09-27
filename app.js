@@ -457,6 +457,7 @@ const darkmodebtn = document.querySelector(".darkmode-btn");
 const input = document.querySelector("input");
 const dheader = document.querySelector(".main-contents")
 const dmain = document.querySelector(".main")
+const dtransbtn = document.querySelector(".translatebtn")
 
 
 const dprogressfill = document.querySelector(".progress-fill")
@@ -471,6 +472,7 @@ function darkmodefunction() {
         dheader.classList.add("darkmodeactivatedheader")
         dmain.classList.add("darkmodeactivatedmain")
         dprogressfill.classList.add("darkmodeprogress")
+        dtransbtn.classList.add("darkmodetransbtn")
 
 
         if (songsactivated) {
@@ -489,6 +491,7 @@ function darkmodefunction() {
         dheader.classList.remove("darkmodeactivatedheader")
         dmain.classList.remove("darkmodeactivatedmain")
         dprogressfill.classList.remove("darkmodeprogress")
+        dtransbtn.classList.remove("darkmodetransbtn")
 
 
         if (songsactivated) {
