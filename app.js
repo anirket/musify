@@ -27,7 +27,7 @@ fetch("./JSON/ritviz.json")
 
 //grab all buttons
 
-
+var mq = window.matchMedia( "(max-width: 600px)" );
 const logo = document.querySelectorAll('#logo path');
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav-links');
@@ -115,8 +115,14 @@ function move() {
     flap.style.transition = "all 1.5s ease";
     images.style.transition = "all 1.5s ease";
     if (a === 0) {
-        //going down
+        if (mq.matches) {
+            flap.style.transform = 'translateY(480px)';
+        }
+        else{
+            //going down
         flap.style.transform = 'translateY(420px)';
+        }
+        
         translatebtn.style.transform = 'rotate(180deg)';
         images.style.opacity = '0';
         a = 1;
@@ -329,8 +335,13 @@ showalbums.addEventListener("click", () => {
 
     // nav.classList.remove('nav-active');
     if (a === 0) {
-        //going down
+        if (mq.matches) {
+            flap.style.transform = 'translateY(480px)';
+        }
+        else{
+            //going down
         flap.style.transform = 'translateY(420px)';
+        }
         translatebtn.style.transform = 'rotate(180deg)';
         images.style.opacity = '0';
         a = 1;
@@ -447,6 +458,7 @@ shuffle.addEventListener("click", () => {
     console.log(randomsong);
     audio.src = selectedartist[randomsong].src;
     currentsongvalue = randomsong;
+    playorpause.innerHTML = `<i class="fas fa-pause"></i>`;
     audio.currentTime = 0;
     audio.play();
     flapupdate();
