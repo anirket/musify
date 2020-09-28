@@ -25,7 +25,12 @@
 <img src="./readmeimg/homedark.png">
 
 ---
+## About us page
 
+<img src="./readmeimg/aboutus.png">
+
+
+---
 ## Created by [Aniket](https://github.com/anirket) and [Abhijith](https://github.com/AbhijithS-Ark)
 
 
