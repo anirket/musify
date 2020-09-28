@@ -24,7 +24,7 @@ body {
 
 .music {
   width: 25.4375rem;
-  height: 100vh;
+  height: 38.3rem;
   background: linear-gradient(#020202, #06266b);
   position: relative;
   overflow: hidden;
@@ -227,7 +227,7 @@ body {
 
 .main {
   width: 23.4375rem;
-  height: 90vh;
+  height: 38.3rem;
   background: linear-gradient(to bottom, #9b2eca, #298bb3, #56DDCE 100%);
   position: absolute;
   z-index: 1;
@@ -842,8 +842,24 @@ transform:scale(1);
     .songlist li{
       width:84vw;
     }
-}
+    .music{
+      width:100vw;
+      height:100vh;
+    }
+    .progress-bar{
+      position:absolute;
+      top:82%;
+    }
+    .last-division{
+      position:absolute;
+      top:88%;
+    }
+    .lastdivision.play{
+      position:absolute;
+      top:88%;
+    }
     
+}
 
 
 @media only screen and (max-width:400px){

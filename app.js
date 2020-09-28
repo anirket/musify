@@ -336,7 +336,7 @@ showalbums.addEventListener("click", () => {
     // nav.classList.remove('nav-active');
     if (a === 0) {
         if (mq.matches) {
-            flap.style.transform = 'translateY(480px)';
+            flap.style.transform = 'translateY(485px)';
         }
         else{
             //going down
