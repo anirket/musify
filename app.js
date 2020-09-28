@@ -1,9 +1,38 @@
+let arjitsongs, edsongs, btssongs, ritvizsongs, allsongs;
+
+fetch("./JSON/arjit.json")
+    .then((data) => data.json())
+    .then((data) => {
+        arjitsongs = data;
+    })
+fetch("./JSON/bts.json")
+    .then((data) => data.json())
+    .then((data) => {
+        btssongs = data;
+    })
+fetch("./JSON/ed.json")
+    .then((data) => data.json())
+    .then((data) => {
+        edsongs = data;
+    })
+fetch("./JSON/ritviz.json")
+    .then((data) => data.json())
+    .then((data) => {
+        ritvizsongs = data;
+        console.log(ritvizsongs);
+    })
+
+
+
+
 //grab all buttons
+
+
 const logo = document.querySelectorAll('#logo path');
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav-links');
 const navlinks = document.querySelectorAll('.nav-links li');
-let arjitsongs, edsongs, btssongs, ritvizsongs, allsongs;
+
 const albumsorsongs = document.querySelector(".albumsorsongs");
 const albums = document.querySelector(".albums");
 const showalbums = document.querySelector(".showalbums");
@@ -131,33 +160,6 @@ const navslide = () => {
 navslide();
 
 //grab all json file
-fetch("./JSON/arjit.json")
-    .then((data) => data.json())
-    .then((data) => {
-        arjitsongs = data;
-    })
-fetch("./JSON/bts.json")
-    .then((data) => data.json())
-    .then((data) => {
-        btssongs = data;
-    })
-fetch("./JSON/ed.json")
-    .then((data) => data.json())
-    .then((data) => {
-        edsongs = data;
-    })
-fetch("./JSON/ritviz.json")
-    .then((data) => data.json())
-    .then((data) => {
-        ritvizsongs = data;
-        console.log(ritvizsongs);
-    })
-fetch("./JSON/allsongs.json")
-    .then((data) => data.json())
-    .then((data) => {
-        allsongs = data;
-    })
-
 
 //when clicked on album show songs or when clicked on song play song
 albumsorsongs.addEventListener("click", (e) => {
